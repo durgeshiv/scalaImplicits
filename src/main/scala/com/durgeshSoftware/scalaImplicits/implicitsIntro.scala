@@ -28,6 +28,8 @@ object implicitsIntro extends App {
   // In order to convert string to Person, we'll need to call method, normally as below ::
   stringtoPerson("durgesh").greet
 
+
+
   // Again letsdefine same conversion as above with little touch of implicits
   implicit def stringToPersonAnother(str2: String): Person = Person(str2)
 
@@ -35,7 +37,7 @@ object implicitsIntro extends App {
   // any string natively cannot implement that method.
 
   // try calling greet method over a string
-  println("durgesh".greet) // this is made possible because  
+  println("durgesh".greet) // this is made possible because
 
 
 
