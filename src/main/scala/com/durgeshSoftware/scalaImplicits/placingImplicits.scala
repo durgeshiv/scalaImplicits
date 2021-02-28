@@ -1,5 +1,7 @@
 package com.durgeshSoftware.scalaImplicits
 
+import com.durgeshSoftware.scalaImplicits.exercise1.Person
+
 
 object placingImplicits extends App {
 
@@ -39,5 +41,26 @@ object placingImplicits extends App {
   /**
    * Now, letsdo an exercise to create implicit ordering function <-- see exercise1.scala
    */
+
+  /**
+   * Lets consider a situation to implement both implicit ordering by name and by age at same time without
+   * any issue at compile time contrary to what we've seen in above scenario implemented in exercise1
+   *
+   * Lets define implicit ordering by name and age here.
+   */
+
+  case class Person(name: String, age: Int)
+  val lst = List(Person("Marry", 25), Person("Alwyn", 40), Person("Chris", 31))
+  // defining implicit ordering as per name as below.
+  implicit def nameAlphbeticalOrder: Ordering[Person] = Ordering.fromLessThan((a,b) => a.name < b.name)
+  // defining implicit ordering as per age as below.
+  implicit def ageReverseOrder: Ordering[Person] = Ordering.fromLessThan((a,b) => a.age > b.age)
+
+  // Now since two implicit ordering is defined compiler will through an error as we are confusing compiler
+  // with two of such definitions.
+
+  // Hence these can be done in two different object enclosing implicit definitions and as
+  // and when required, we can import required definition as done in multipleImplicitImplementation class.
+
 
 }
