@@ -1,9 +1,9 @@
 package com.durgeshSoftware.scalaImplicits
 
-import com.durgeshSoftware.scalaImplicits.exercise1.Person
+import com.durgeshSoftware.scalaImplicits.Exercise1.Person
 
 
-object placingImplicits extends App {
+object PlacingImplicits extends App {
 
   //We'll try to demonstrate ordering/ placing  implicits correctly
   // lets  see sorted method over list - used to arrange it in sorted order

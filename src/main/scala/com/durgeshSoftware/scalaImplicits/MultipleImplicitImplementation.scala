@@ -1,6 +1,6 @@
 package com.durgeshSoftware.scalaImplicits
 
-import com.durgeshSoftware.scalaImplicits.placingImplicits.Person
+import com.durgeshSoftware.scalaImplicits.PlacingImplicits.Person
 
 /**
  * Written by Durgesh Agnihotri - 1614636351

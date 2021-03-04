@@ -6,7 +6,7 @@ package com.durgeshSoftware.scalaImplicits
  * Written by Durgesh Agnihotri
  */
 
-object implicitsIntro extends App {
+object ImplicitsIntro extends App {
 
   // Scala “implicits” allow you to omit calling methods or
   // referencing variables directly but instead rely on the compiler

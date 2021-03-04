@@ -1,6 +1,6 @@
 package com.durgeshSoftware.scalaImplicits
 
-object exercise1 extends App{
+object Exercise1 extends App{
 
   /**
    * Q1. Lets order a List persons as defined below on basis of their name, alphabetical order.
