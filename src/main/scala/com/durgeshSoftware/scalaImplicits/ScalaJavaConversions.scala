@@ -37,6 +37,20 @@ object ScalaJavaConversions extends App {
   //lets print above javaSEt
   println(javaSet) // this is printing a Java set [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+// converting above set to scala can be done in way below ::
+  val scalaSet = javaSet.asScala
+
+  /**
+   * Similarly other elements can also be converted, as below :
+   * Since java have mutable collections thus converting to scala will return mutable collection type.
+   *
+   * 1. Iterator
+   * 2. Iterable
+   * 3. ju.List -> scala.mutable.Buffer
+   * 4. ju.Set -> scala.mutable.Set
+   * 5. ju.Map -> scala.mutable.Map
+   */
+
 
 
 }
