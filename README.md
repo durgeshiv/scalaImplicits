@@ -4,3 +4,4 @@ Hi, I am Durgesh Agnihotri , created this project for learning purpose. In this 
 2. placing Implicits - preference by scala compiler.
 3. Implementing multiple implicits in single class, order and preference.
 4. Scala-Java Conversions.
+5. Exercises
